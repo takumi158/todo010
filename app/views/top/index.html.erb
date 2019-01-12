@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width'>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css"></link>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="1026.css">
+
+</head>
+
+<body>
+
+<h1>TODOリスト<br>管理システム</h1>
+<%= link_to "新規作成", new_todolist_path %>
+<hr>
+<div class="count">
+<h1>現在の課題数</h1>
+<h2><%= @todolists.count %></h2>
+</div>
+<hr>
+<%= link_to "新規作成", new_todolist_path %>
+
+</body>
